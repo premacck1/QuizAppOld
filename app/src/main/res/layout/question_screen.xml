@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+<ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" 
+            android:id="@+id/questn_layout">
+<TableLayout            
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shrinkColumns="*"  android:stretchColumns="*">
+            
+    <TableRow android:paddingStart="150dp"
+        android:paddingLeft="150dp"
+        android:layout_width="wrap_content">
+        <ImageView
+        android:id="@+id/favStar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+            android:contentDescription="Add to favourites"
+        android:src="@drawable/unfilled_star" />
+        
+    </TableRow>
+                        <!-- Row 1 with single column -->
+                        <TableRow
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:gravity="center_horizontal">
+                     
+    <TextView
+        android:id="@+id/quetionView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="17dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+    
+</TableRow>
+<TableRow ></TableRow>
+ <TableRow  				android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+                            <RadioGroup
+            android:id="@+id/buttonGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4" >
+            <RadioButton
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+            <RadioButton
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"/>
+            <RadioButton
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+            <RadioButton
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"/>
+        </RadioGroup>
+                        </TableRow>
+
+    
+<TableRow>
+    
+    <ImageView
+        android:id="@+id/prevBut"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:src="@drawable/prev_but"
+        android:layout_weight="1" />
+    <ImageView
+        android:id="@+id/nextBut"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:src="@drawable/next_but"
+        android:layout_weight="1" />
+
+    
+</TableRow>
+</TableLayout></ScrollView>
+</LinearLayout>
